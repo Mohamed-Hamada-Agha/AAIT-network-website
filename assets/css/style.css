@@ -1,0 +1,38 @@
+/* ما فيش font-family على * أو :not(i) نهائيًا */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+.custom-lang-panel {
+  width: 180px;
+  background: #fff;
+  border: 1px solid #c6c6c6;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.08);
+  padding: 10px;
+  margin: 2px;
+  z-index: 9999;
+}
+
+:root{
+  --font-sans: "JF Flat", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "Noto Sans Arabic", "Noto Sans", sans-serif;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* سيب ألوان الخلفية والنص للثيم/تايلويند */
+/* احذف أي قواعد كانت بتعمل:*/
+   body { background-color: white; color: black; }
+
+
+/* حافظ على أيقونات PrimeIcons */
+.pi, .pi::before { font-family: "primeicons" !important; }
+
+/* سكرول مساعد */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

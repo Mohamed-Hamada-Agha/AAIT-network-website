@@ -45,73 +45,18 @@ The project is functional and stable, with ongoing improvements mainly focused o
 - ⚠️ Tablet (in progress)
 - ⚠️ Mobile (in progress)
 
-> Responsive improvements are being added gradually through upcoming commits.
-
----
-
-## 📂 Project Structure
-
+Responsive improvements are being added gradually through upcoming commits.
 
 ---
 
 ## ⚙️ Getting Started
 
-To get a local copy up and running, follow these steps:
-
 ### Prerequisites
-
 - Node.js (v18+ recommended)
 - npm / yarn / pnpm / bun
 
----
-
-### Installation
+### Installation & Development
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview

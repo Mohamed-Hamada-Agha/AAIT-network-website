@@ -11,16 +11,15 @@
     <div class="mx-4 md:mx-16 lg:mx-28">
       
       <!-- New Arrivals Section -->
-      <section class="py-8 md:py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <section class="container mx-auto px-4 py-16">
         <NewArrivals
-          title="وصل حديثاً"
-          viewAllLink="/products"
-          :products="products"
-        />
+        :products="products"
+        title="وصل حديثاً"
+        viewAllLink="/products/new-arrivals"/>
       </section>
 
       <!-- Special Products Section -->
-      <section class="py-8 md:py-12">
+      <section class="container mx-auto px-4 py-16">
         <SpicalProudcts
           title="منتجات مميزة"
           viewAllLink="/products"
@@ -57,21 +56,62 @@ import ContactSection from '~/components/sections/ContactSection.vue';
 
 
 // Products Data
- 
+  const products = ref([
+  {
+    id: 1,
+    name: 'منتج تيست عساف',
+    description: 'وصف',
+    price: 80,
+    image: '/images/105.jpg',
+    rating: 4,
+    isOutOfStock: false,
+    isFav: false
+  },
+  {
+    id: 2,
+    name: 'اسم',
+    description: 'وصف',
+    price: 80,
+    image: '/images/104.jpg',
+    rating: 3,
+    isOutOfStock: false,
+    isFav: false
+  },
+  {
+    id: 3,
+    name: 'اسم',
+    description: 'وصف',
+    price: 80,
+    image: '/images/102.jpg',
+    rating: 4,
+    isOutOfStock: false,
+    isFav: false
+  },
+  {
+    id: 4,
+    name: 'اسم',
+    description: 'وصف',
+    price: 80,
+    image: '/images/101.jpg',
+    rating: 4,
+    isOutOfStock: false,
+    isFav: false
+  }
+]);
 
 // Special Products Data
-// const spicalProudcts = ref([
-//   {
-//     id: 1,
-//     name: 'اسم',
-//     description: 'وصف',
-//     price: 80,
-//     image: '/images/101.jpg',
-//     rating: 4,
-//     isOutOfStock: false,
-//     isFav: false
-//   }
-// ]);
+const spicalProudcts = ref([
+  {
+    id: 1,
+    name: 'اسم',
+    description: 'وصف',
+    price: 80,
+    image: '/images/101.jpg',
+    rating: 4,
+    isOutOfStock: false,
+    isFav: false
+  }
+]);
 
 // Contact Form Data
 const form = reactive({

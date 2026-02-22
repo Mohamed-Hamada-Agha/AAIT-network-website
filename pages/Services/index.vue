@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import WhatsappButton from '~/components/auth/WhatsappButton.vue';
+// import WhatsappButton from '~/components/auth/WhatsappButton.vue';
 import Services from '~/components/layout/Services.vue';
 </script>

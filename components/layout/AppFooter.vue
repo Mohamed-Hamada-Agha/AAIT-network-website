@@ -47,9 +47,40 @@
       </div>
     </div>
    <!-- العمود الثالث -->
-    <div class="hidden md:block">
+    <div class="">
+      <ul class="flex gap-6 my-4">
+       <li>
+        <a href="" class="w-[40px] h-[40px] rounded-md">
+          <img src="/assets/images/1736001966_6520.webp" alt="" 
+          class="w-[40px] h-[40px] rounded-md object-cover transition-all duration-700 ease-in-out hover:rotate-[360deg] hover:rounded-full cursor-pointer">
+        </a>
+       </li> 
+       <li>
+        <a href="" class="w-[40px] h-[40px] rounded-md">
+          <img src="/assets/images/1736001841_8892.webp" alt="" 
+           class="w-[40px] h-[40px] rounded-md object-cover transition-all duration-700 ease-in-out hover:rotate-[360deg] hover:rounded-full cursor-pointer">
+        </a>
+       </li> 
+       <li>
+        <a href="" class="w-[40px] h-[40px] rounded-md">
+          <img src="/assets/images/1736001966_6520.webp" alt="" 
+           class="w-[40px] h-[40px] rounded-md object-cover transition-all duration-700 ease-in-out hover:rotate-[360deg] hover:rounded-full cursor-pointer">
+        </a>
+       </li> 
+       <li>
+        <a href="" class="w-[40px] h-[40px] rounded-md">
+          <img src="/assets/images/1736001841_8892.webp" alt="" 
+           class="w-[40px] h-[40px] rounded-md object-cover transition-all duration-700 ease-in-out hover:rotate-[360deg] hover:rounded-full cursor-pointer">
+        </a>
+       </li> 
+      </ul>
+      <div class=" text-lg">
+        <h2>
+          جميع الحقوق محفوظةلشركة 
+          <a href="/pages/index.vue" class="text-cyan-600">أوامر الشبكة</a>
+        </h2>
       </div>
-        
+      </div>
       </div>
     </div>
   </footer>

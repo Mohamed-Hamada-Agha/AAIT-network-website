@@ -1,10 +1,8 @@
 <template>
   <div class="bg-white rounded-xl shadow-sm border overflow-hidden">
-    <!-- صورة المنتج + القلب -->
     <div class="relative h-[230px] bg-gray-100">
       <img :src="product.image" :alt="product.name" class="w-full h-full object-cover" />
 
-      <!-- زر المفضلة -->
       <button
         type="button"
         @click="$emit('toggle-fav', product.id)"
@@ -15,7 +13,6 @@
       </button>
     </div>
 
-    <!-- المحتوى -->
     <div class="p-4">
       <!-- التقييم + السعر -->
       <div class="flex items-center justify-between mb-2">
@@ -41,28 +38,40 @@
       </div>
 
       <!-- زر السلة -->
-      <button
+      <BaseButton
+        v-if="!product.isOutOfStock"
+        label="🛒 إضافة إلى السلة"
+        @click="$emit('add-to-cart', product.id)"
+      />
+      <BaseButton
+        v-else
+        disabled
+        label="الكمية منتهية"
+        class="w-full bg-gray-300 text-gray-600 cursor-not-allowed"
+      />
+      <!-- <button
         v-if="!product.isOutOfStock"
         type="button"
         @click="$emit('add-to-cart', product.id)"
         class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2"
       >
-        🛒 إضافة إلى السلة
-      </button>
+       
+      </button> -->
 
-      <button
+      <!-- <button
         v-else
         type="button"
         class="w-full border border-cyan-500 text-cyan-600 font-bold py-3 rounded-lg"
         disabled
       >
         الكمية منتهية
-      </button>
+      </button> -->
     </div>
   </div>
 </template>
 
 <script setup>
+import BaseButton from '../layout/BaseButton.vue';
 defineProps({
   product: { type: Object, required: true }
 })

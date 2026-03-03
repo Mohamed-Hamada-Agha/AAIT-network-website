@@ -5,7 +5,7 @@
       <h2 class="text-2xl font-bold">{{ title }}</h2>
       <NuxtLink
         :to="viewAllLink"
-        class="text-base hover:underline transition-all"
+        class="text-base hover:underline transition-all font-bold"
       >
         عرض الكل
       </NuxtLink>

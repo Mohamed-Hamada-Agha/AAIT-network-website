@@ -1,8 +1,8 @@
 <template>
   <div class="relative mx-4 md:mx-16 mt-8" dir="rtl">
-    <div class="flex items-center justify-between mb-8 md:mb-12">
+    <div class="flex items-center justify-between mb-8 md:mb-12 mx-12">
       <h2 class="text-xl md:text-3xl font-bold text-gray-900">الأقسام الرئيسية</h2>
-      <NuxtLink to="/categories" class="text-sm md:text-base text-cyan-600 hover:underline">
+      <NuxtLink to="/categories" class="text-sm md:text-base hover:underline">
         عرض الكل
       </NuxtLink> 
     </div>
@@ -71,8 +71,6 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
-
-// ✅ صور ثابتة (زي ما أنت بعتها — عدّل المسارات لأسماء صورك)
 const categories = ref([
   {
     id: 1,

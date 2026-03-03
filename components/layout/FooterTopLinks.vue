@@ -34,7 +34,6 @@
         </span>
       </div>
 
-      <!-- الشرح -->
       <div
         v-if="isOpen(idx)"
         class="mt-3 text-sm text-gray-600 leading-6"
@@ -57,10 +56,6 @@ const props = defineProps({
   single: { type: Boolean, default: true }
 })
 
-/**
- * single=true => openIndex رقم واحد
- * single=false => ممكن تفتح أكتر من كارت
- */
 const openIndex = ref(null)
 const openSet = ref(new Set())
 
